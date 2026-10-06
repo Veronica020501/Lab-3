@@ -15,32 +15,32 @@ body {
     gap: 10px;
 }
 
-header {
+.header {
     background-color: lightpink;
     grid-area: h;
 }
 
-nav {
+.nav {
     background-color: lightblue;
     grid-area: n;
 }
 
-nav ul {
+.nav ul {
     display: flex;
     list-style: none;
     gap: 30px;
 }
 
-main {
+.main {
     /* background-color: lightgreen; */
     grid-area: m;
 }
 
-article {
+.card {
     width: 100%;
 }
 
-footer {
+.footer {
     background-color: lightyellow;
     grid-area: f;
     text-align: center;
@@ -54,26 +54,26 @@ footer {
             "n m"
             "f f";
     }
-    header{
+    .header{
         width: 100%;
     }
     
-    main{
+    .main{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    article:nth-child(1){
+    .card:nth-child(1){
         background-color: lightcoral;
         grid-column: 1 / -1;
     }
     
-    article:nth-child(2){
+    .card:nth-child(2){
         background-color: purple;
         grid-column: 1 / 2;
     }
 
-    article:nth-child(3){
+    .card:nth-child(3){
         background-color: lightgreen;
         grid-column: 2 / -1;
     }
