@@ -27,23 +27,39 @@ body {
 
 .nav ul {
     display: flex;
+    flex-direction: row;
     list-style: none;
     gap: 30px;
+    justify-content: flex-start;
+    padding: 30px 10px;
 }
 
 .main {
-    /* background-color: lightgreen; */
     grid-area: m;
 }
 
 .card {
     width: 100%;
+    padding: 20px;
+}
+
+.card:nth-child(1) {
+    background-color: lightcoral;
+}
+
+.card:nth-child(2) {
+    background-color: purple;
+}
+
+.card:nth-child(3) {
+    background-color: lightgreen;
 }
 
 .footer {
     background-color: lightyellow;
     grid-area: f;
     text-align: center;
+    padding: 10px;
 }
 
 @media (min-width: 768px) {
@@ -64,17 +80,14 @@ body {
     }
 
     .card:nth-child(1){
-        background-color: lightcoral;
         grid-column: 1 / -1;
     }
     
     .card:nth-child(2){
-        background-color: purple;
         grid-column: 1 / 2;
     }
 
     .card:nth-child(3){
-        background-color: lightgreen;
         grid-column: 2 / -1;
     }
 }
